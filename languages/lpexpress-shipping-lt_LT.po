@@ -1,0 +1,78 @@
+# Copyright (C) 2017 "LP Express" Shipping Method for WooCommerce
+# This file is distributed under the same license as the "LP Express" Shipping Method for WooCommerce package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \"LP Express\" Shipping Method for WooCommerce "
+"1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lpexpress-"
+"shipping-method-for-woocommerce\n"
+"POT-Creation-Date: 2017-07-19 18:36+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-07-19 18:40+0300\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 "
+"&& (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: lt\n"
+
+msgid "\"LP Express\" courier"
+msgstr "LP Express kurjeriai"
+
+msgid "Shipping via \"LP Express\" courier services"
+msgstr "LP Express kurjerių pristatymas"
+
+msgid "Title"
+msgstr "Pavadinimas"
+
+msgid "Title to be display on site"
+msgstr "Pavadinimas, kuris bus rodomas puslapyje"
+
+msgid "Cost"
+msgstr "Kaina"
+
+msgid "Shipping price"
+msgstr "Pristatymo kaina"
+
+msgid "Free shipping"
+msgstr "Nemokamas pristatymas"
+
+msgid "Free shipping if price greater than (0 - turned off)"
+msgstr "Nemokamas pristatymas nuo nurodytos sumos (0 - visada mokamas)"
+
+msgid "Tax status"
+msgstr "Mokesčiai"
+
+msgid "Taxable"
+msgstr "Pridėti mokesčius"
+
+msgctxt "Tax status"
+msgid "None"
+msgstr "Neapmokestinama"
+
+msgid "\"LP Express\" parcel terminals"
+msgstr "LP Express paštomatai"
+
+msgid "Shipping to \"LP Express\" self-service parcel terminals"
+msgstr "Pristatymas į LP Express paštomatus"
+
+msgid "Please select a parcel terminal"
+msgstr "Prašome pasirinkti norimą paštomatą"
+
+msgid "Choose terminal"
+msgstr "Pasirinkite terminalą"
+
+msgctxt "empty value label for terminals"
+msgid "- Choose terminal -"
+msgstr "- Pasirinkite terminala -"
+
+msgid "Chosen terminal"
+msgstr "Pasirinktas terminalas"
+
+msgid "Address"
+msgstr "Adresas"
+
+msgid "Comment"
+msgstr "Komentaras"
