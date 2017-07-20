@@ -1,9 +1,9 @@
 <?php defined( 'ABSPATH' ) or die( 'No script kiddies please!' ); ?>
 <tr class="wc_shipping_lpexpress-terminals">
-	<th><?php _e( 'Choose terminal', 'lpexpress-shipping' ) ?></th>
+	<th><?php _e( 'Choose terminal', 'lp-express-shipping-method-for-woocommerce' ) ?></th>
 	<td>
 		<select name="<?php echo $field_name ?>" id="<?php echo $field_id ?>" class="lpexpress_select_field">
-			<option value="" <?php selected( $selected, '' ); ?>><?php _ex( '- Choose terminal -', 'empty value label for terminals', 'lpexpress-shipping' ) ?></option>
+			<option value="" <?php selected( $selected, '' ); ?>><?php _ex( '- Choose terminal -', 'empty value label for terminals', 'lp-express-shipping-method-for-woocommerce' ) ?></option>
 			<?php foreach( $terminals as $group_name => $locations ) : ?>
 				<optgroup label="<?php echo $group_name ?>">
 					<?php foreach( $locations as $location ) : ?>

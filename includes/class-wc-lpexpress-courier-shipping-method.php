@@ -14,8 +14,8 @@ class WC_LPExpress_Courier_Shipping_Method extends WC_Shipping_Method {
 		// Meta and input field name
 		$this->id                 = 'lpexpress_courier';
 		$this->instance_id        = absint( $instance_id );
-		$this->method_title       = __( '"LP Express" courier', 'lpexpress-shipping' );
-		$this->method_description = __( 'Shipping via "LP Express" courier services', 'lpexpress-shipping' );
+		$this->method_title       = __( '"LP Express" courier', 'lp-express-shipping-method-for-woocommerce' );
+		$this->method_description = __( 'Shipping via "LP Express" courier services', 'lp-express-shipping-method-for-woocommerce' );
 		$this->supports           = array(
 			'shipping-zones',
 			'instance-settings',
@@ -56,39 +56,39 @@ class WC_LPExpress_Courier_Shipping_Method extends WC_Shipping_Method {
 	public function init_form_fields() {
 		$this->instance_form_fields = array(
 			'title' => array(
-				'title'         => __( 'Title', 'lpexpress-shipping' ),
+				'title'         => __( 'Title', 'lp-express-shipping-method-for-woocommerce' ),
 				'type'          => 'text',
-				'description'   => __( 'Title to be display on site', 'lpexpress-shipping' ),
-				'default'       => __( '"LP Express" courier', 'lpexpress-shipping' ),
+				'description'   => __( 'Title to be display on site', 'lp-express-shipping-method-for-woocommerce' ),
+				'default'       => __( '"LP Express" courier', 'lp-express-shipping-method-for-woocommerce' ),
 				'desc_tip'      => true,
 			),
 
 			'cost' => array(
-				'title'         => __( 'Cost', 'lpexpress-shipping' ),
+				'title'         => __( 'Cost', 'lp-express-shipping-method-for-woocommerce' ),
 				'type'          => 'number',
-				'description'   => __( 'Shipping price', 'lpexpress-shipping' ),
+				'description'   => __( 'Shipping price', 'lp-express-shipping-method-for-woocommerce' ),
 				'placeholder'   => '0',
 				'default'       => 0,
 				'desc_tip'      => true,
 			),
 
 			'free_shipping'     => array(
-				'title'         => __( 'Free shipping', 'lpexpress-shipping' ),
+				'title'         => __( 'Free shipping', 'lp-express-shipping-method-for-woocommerce' ),
 				'type'          => 'number',
-				'description'   => __( 'Free shipping if price greater than (0 - turned off)', 'lpexpress-shipping' ),
+				'description'   => __( 'Free shipping if price greater than (0 - turned off)', 'lp-express-shipping-method-for-woocommerce' ),
 				'placeholder'   => '0',
 				'default'       => 0,
 				'desc_tip'      => true,
 			),
 
 			'tax_status' => array(
-				'title'         => __( 'Tax status', 'lpexpress-shipping' ),
+				'title'         => __( 'Tax status', 'lp-express-shipping-method-for-woocommerce' ),
 				'type'          => 'select',
 				'class'         => 'wc-enhanced-select',
 				'default'       => 'none',
 				'options'       => array(
-					'taxable'   => __( 'Taxable', 'lpexpress-shipping' ),
-					'none'      => _x( 'None', 'Tax status', 'lpexpress-shipping' ),
+					'taxable'   => __( 'Taxable', 'lp-express-shipping-method-for-woocommerce' ),
+					'none'      => _x( 'None', 'Tax status', 'lp-express-shipping-method-for-woocommerce' ),
 				),
 			),
 

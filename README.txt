@@ -1,6 +1,6 @@
 === "LP Express" Shipping Method for WooCommerce ===
 Contributors: zefy
-Tags: Lietuvos pastas, LP EXPRESS, lpexpress, shipping method, parcel terminal, WooCommerce
+Tags: Lietuvos pastas, LP EXPRESS, lpexpress, shipping method, parcel terminal, WooCommerce, pastomatai
 Requires at least: 4.4
 Tested up to: 4.8
 Stable tag: 1.0.0

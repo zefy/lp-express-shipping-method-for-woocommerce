@@ -7,7 +7,7 @@
  * Author URI: https://github.com/zefy
  * License:     GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: lpexpress-shipping
+ * Text Domain: lp-express-shipping-method-for-woocommerce
  * Domain Path: languages
  */
 
@@ -83,7 +83,7 @@ class LPExpress_Shipping_Method_For_WooCommerce {
 	 * @return void
 	 */
 	function load_translations() {
-		load_plugin_textdomain( 'lpexpress-shipping', FALSE, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'lp-express-shipping-method-for-woocommerce', FALSE, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 
 	/**
