@@ -2,7 +2,7 @@
 /**
  * Plugin Name: "LP Express" Shipping Method for WooCommerce
  * Description: "LP Express" shipping to self-service parcel terminals and/or directly to customer via courier
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Martynas Žaliaduonis
  * Author URI: https://github.com/zefy
  * License:     GPL2

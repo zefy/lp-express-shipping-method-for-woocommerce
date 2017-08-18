@@ -281,7 +281,7 @@ class WC_LPExpress_Terminals_Shipping_Method extends WC_Shipping_Method {
 	public function is_shipping_method_available() {
 		$packages = WC()->shipping()->get_packages();
 		foreach ( $packages as $i => $package ) {
-			if( key( $package['rates'] ) == $this->id ) {
+			if( isset( $package['rates'][$this->id] ) ) {
 				return true;
 			}
 		}
@@ -298,6 +298,15 @@ class WC_LPExpress_Terminals_Shipping_Method extends WC_Shipping_Method {
 	public function validate_user_selected_terminal( $posted ) {
 		// Preferred error text
 		$error = __( 'Please select a parcel terminal', 'lp-express-shipping-method-for-woocommerce' );
+
+		// Get currently selected shipping methods
+		$chosen_shipping_methods = WC()->session->get( 'chosen_shipping_methods' );
+
+		// Check if this shipping method is selected
+		if( ! empty( $chosen_shipping_methods ) && ! in_array( $this->id, $chosen_shipping_methods ) ) {
+			// Stop validation if it isn't
+			return;
+		}
 
 		// Be sure shipping method was posted
 		if( ! isset( $posted['shipping_method'] ) || ! is_array( $posted['shipping_method'] ) ) {
