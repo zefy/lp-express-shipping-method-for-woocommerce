@@ -2,7 +2,7 @@
 Contributors: zefy
 Tags: Lietuvos pastas, LP EXPRESS, lpexpress, shipping method, parcel terminal, WooCommerce, pastomatai
 Requires at least: 4.4
-Tested up to: 4.8
+Tested up to: 4.9
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
