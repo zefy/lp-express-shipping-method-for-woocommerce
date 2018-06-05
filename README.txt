@@ -2,8 +2,8 @@
 Contributors: zefy
 Tags: Lietuvos pastas, LP EXPRESS, lpexpress, shipping method, parcel terminal, WooCommerce, pastomatai
 Requires at least: 4.4
-Tested up to: 4.9
-Stable tag: 1.0.1
+Tested up to: 4.9.6
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,11 +20,11 @@ It supports both LP EXPRESS shipping possibilities:
 Customer can pick nearest parcel terminal in checkout. Terminals' list is auto-updated so it's always up-to-date.
 
 Everyone can contribute at GitHub:
-https://github.com/zefy/lpexpress-shipping-method-for-woocommerce
+https://github.com/zefy/lp-express-shipping-method-for-woocommerce
 
 == Installation ==
 
-1. Upload `lpexpress-shipping-method-for-woocommerce` to the `/wp-content/plugins/` directory
+1. Upload `lp-express-shipping-method-for-woocommerce` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to WooCommerce -> Settings
 4. In the top of the page choose 'Shipping'
@@ -36,6 +36,10 @@ https://github.com/zefy/lpexpress-shipping-method-for-woocommerce
 2. Checkout page with terminals list opened.
 
 == Changelog ==
+
+= 1.0.2 =
+* Fixed bug with virtual products
+* Fixed bug with duplicated messages
 
 = 1.0.1 =
 * Small bugfixes
