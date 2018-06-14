@@ -431,23 +431,23 @@ class WC_LPExpress_Terminals_Shipping_Method extends WC_Shipping_Method {
 
             $template_data  = (array) $terminal;
 
+            // Prevent duplication when instance created by shipping zones
+            if( $this->instance_id > 0 ) {
+                return;
+            }
+
             // Output selected terminal
-            if( current_filter() == 'woocommerce_order_details_after_order_table' ) {
-                // Prevent duplication when instance created by shipping zones
-                if( $this->instance_id > 0 ) {
-                    return;
-                }
+            switch( current_filter() ) {
+                case 'woocommerce_order_details_after_order_table':
+                    wc_get_template( 'order/'. $this->id .'.php', $template_data );
+                    break;
 
-                wc_get_template( 'order/'. $this->id .'.php', $template_data );
-            } elseif( current_filter() == 'woocommerce_email_after_order_table' ) {
-                // Prevent duplication when instance created by shipping zones
-                if( $this->instance_id > 0 ) {
-                    return;
-                }
-
-                wc_get_template( 'email/'. $this->id .'.php', $template_data );
-            } else {
-                wc_get_template( 'order/admin_'. $this->id .'.php', $template_data );
+                case 'woocommerce_email_after_order_table':
+                    wc_get_template( 'email/'. $this->id .'.php', $template_data );
+                    break;
+                default:
+                    wc_get_template( 'order/admin_'. $this->id .'.php', $template_data );
+                    break;
             }
         }
     }
