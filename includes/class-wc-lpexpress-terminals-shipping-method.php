@@ -421,7 +421,8 @@ class WC_LPExpress_Terminals_Shipping_Method extends WC_Shipping_Method {
         }
 
         // Store order ID
-        $this->order_id = $order->get_id();
+        // For compatability with older Woocommerce versions if get_id method doesn't exist, get id directly.
+        $this->order_id = method_exists($order, 'get_id') ? $order->get_id() : $order->id;
 
         // Check if the order has our shipping method
         if( $order->has_shipping_method( $this->id ) ) {
