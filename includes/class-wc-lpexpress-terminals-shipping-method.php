@@ -39,7 +39,7 @@ class WC_LPExpress_Terminals_Shipping_Method extends WC_Shipping_Method {
 
         // Show selected terminal in admin order review
         if( is_admin() ) {
-            add_action( 'woocommerce_admin_order_data_after_shipping_address', array( $this, 'show_selected_terminal' ), 20 );
+          add_action( 'woocommerce_admin_order_items_after_shipping', array( $this, 'show_selected_terminal' ), 20 );
         }
 
         // Meta and input field name
